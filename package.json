@@ -2,7 +2,12 @@
   "name": "vite-wagmi-seed",
   "version": "0.0.0",
   "description": "vite wagmi starter",
-  "main": "index.js",
+  "main": "dist-electron/main/index.js",
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,6 +29,7 @@
     "buffer": "^6.0.3",
     "class-variance-authority": "^0.6.0",
     "clsx": "^1.2.1",
+    "electron-updater": "^6.1.7",
     "jotai": "^1.13.1",
     "lucide-react": "^0.244.0",
     "node-stdlib-browser": "^1.2.0",
@@ -33,6 +39,7 @@
     "react-router-dom": "^6.8.0",
     "tailwind-merge": "^1.13.2",
     "viem": "^2.0.2",
+    "vite-plugin-electron-renderer": "^0.14.5",
     "wagmi": "^2.0.3"
   },
   "devDependencies": {
@@ -48,6 +55,8 @@
     "@typescript-eslint/parser": "^6.18.0",
     "@vitejs/plugin-legacy": "^3.0.2",
     "@vitejs/plugin-react": "4.0.0",
+    "electron": "^28.1.3",
+    "electron-builder": "^24.9.1",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-react-app": "^7.0.1",
@@ -64,6 +73,7 @@
     "unplugin-icons": "^0.15.2",
     "vite": "5.0.11",
     "vite-plugin-checker": "^0.6.2",
+    "vite-plugin-electron": "^0.15.6",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-node-stdlib-browser": "^0.2.1",
     "vite-plugin-pages": "^0.32.0"
